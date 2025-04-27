@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Namaste Paws: Indian Pet Adoption</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+
+        <div class="container">
+
+            <div class="logo">
+
+                <h1>Namaste Paws</h1>
+
+                <p>Indian Pet Adoption</p>
+            </div>
+
+            <nav>
+
+                <ul>
+
+                    <li><a href="#" data-page="adopt" class="active">Adopt</a></li>
+
+                    <li><a href="#" data-page="shelters">Shelters</a></li>
+
+                    <li><a href="#" data-page="contact">Contact Us</a></li>
+
+                    <li><a href="#" data-page="about">About</a></li>
+
+                    <li><a href="#" data-page="login">Login</a></li>
+
+                    <li><a href="#" data-page="signup">Signup</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <main>
+
+        <section id="adopt-page" class="page-section active">
+
+            <div class="container">
+
+                <section id="hero">
+
+                    <h2>Give a Homeless Pet a Second Chance</h2>
+
+                    <p>Find your perfect furry companion today!</p>
+                    <a href="#adopt-page" class="button primary">See Available Pets</a>
+                </section>
+
+                <h2>Available Pets for Adoption</h2>
+
+                <div id="adopt-pet-list" class="grid-view">
+                </div>
+
+                <section id="adopt-pet-filter" class="hidden">
+
+                    <h3>Filter Available Pets</h3>
+
+                    <div class="filter-controls">
+                        <label for="filter-adopt-breed">Breed:</label> <input type="text" id="filter-adopt-breed" placeholder="e.g., Indie, Beagle"> </div>
+
+                    <div class="filter-controls">
+                        <label for="filter-adopt-age">Age (Years):</label> <input type="number" id="filter-adopt-age" min="0" placeholder="Enter age"> </div>
+                    <button id="apply-adopt-filters" class="button secondary">Search Available Pets</button>
+                </section>
+            </div>
+        </section>
+
+
+        <section id="shelters-page" class="page-section hidden">
+
+            <div class="container">
+
+                <h2>Our Partner Shelters Across India</h2>
+
+                <div id="shelter-list" class="grid-view">
+                </div>
+            </div>
+        </section>
+
+
+        <section id="contact-page" class="page-section hidden">
+
+            <div class="container">
+
+                <h2>Contact Us</h2>
+
+                <p>Have questions or want to get in touch?</p>
+
+                <form id="contact-form" class="contact-form">
+
+                    <div class="form-group">
+                        <label for="name">Name:</label> <input type="text" id="name" name="name" required> </div>
+
+                    <div class="form-group">
+                        <label for="email">Email:</label> <input type="email" id="email" name="email" required> </div>
+
+                    <div class="form-group">
+                        <label for="message">Message:</label> <textarea id="message" name="message" rows="5" required></textarea> </div>
+                    <button type="submit" class="button primary">Send Message (Simulated)</button> </form>
+
+                <div id="contact-message" class="success-message hidden">Message sent successfully!</div>
+            </div>
+        </section>
+
+
+        <section id="about-page" class="page-section hidden">
+
+            <div class="container">
+
+                <h2>About Namaste Paws</h2>
+
+                <p>Namaste Paws is an initiative by Swayam Ballal and Ansh Kudalkar From Vidyalankar Institute Of Technology dedicated to helping abandoned and rescued animals find loving homes in India. We partner with local shelters and connect potential
+                    adopters with their perfect furry companions. Our mission is to promote responsible pet ownership and the well-being of animals in our community. We believe that every pet deserves a loving family and every family deserves the joy
+                    of having a pet. Through our platform, we aim to make the adoption process easier and more accessible.</p>
+
+                <p>Thank you for considering adoption and giving a deserving animal a second chance!</p>
+            </div>
+        </section>
+
+
+        <section id="pet-details-page" class="page-section hidden">
+
+            <div class="container pet-details-container">
+            </div>
+        </section>
+
+        <section id="login-page" class="page-section hidden">
+            <div class="container">
+                <h2>Login</h2>
+                <form id="login-form" class="auth-form">
+                    <div class="form-group">
+                        <label for="login-email">Email:</label>
+                        <input type="email" id="login-email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="login-password">Password:</label>
+                        <input type="password" id="login-password" name="password" required>
+                    </div>
+                    <button type="submit" class="button primary">Login</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="signup-page" class="page-section hidden">
+            <div class="container">
+                <h2>Signup</h2>
+                <form id="signup-form" class="auth-form">
+                    <div class="form-group">
+                        <label for="signup-firstname">First Name:</label>
+                        <input type="text" id="signup-firstname" name="firstname" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="signup-lastname">Last Name:</label>
+                        <input type="text" id="signup-lastname" name="lastname" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="signup-email">Email:</label>
+                        <input type="email" id="signup-email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="signup-password">Password:</label>
+                        <input type="password" id="signup-password" name="password" required>
+                    </div>
+                    <button type="submit" class="button primary">Signup</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Admin Login Section -->
+    <section id="admin-login-page" class="page-section hidden">
+        <div class="container">
+            <h2>Admin Login</h2>
+            <form id="admin-login-form" class="auth-form">
+                <div class="form-group">
+                    <label for="admin-username">Username:</label>
+                    <input type="text" id="admin-username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="admin-password">Password:</label>
+                    <input type="password" id="admin-password" name="password" required>
+                </div>
+                <button type="submit" class="button primary">Login</button>
+                <p id="admin-login-error" style="color: red; display: none;"></p>
+            </form>
+        </div>
+    </section>
+
+    <!-- Admin Dashboard Section -->
+    <section id="admin-dashboard-page" class="page-section hidden">
+        <div class="container">
+            <h2>Admin - Adoption Requests</h2>
+            <table id="admin-requests-table" class="grid-view">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Pet</th>
+                        <th>User</th>
+                        <th>Email</th>
+                        <th>Status</th>
+                        <th>Request Date</th>
+                        <th>Decision Date</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Admin adoption requests will be populated here -->
+                </tbody>
+            </table>
+            <button id="admin-logout-btn" class="button secondary" style="margin-top: 20px;">Logout</button>
+        </div>
+    </section>
+
+    <footer>
+
+        <div class="container">
+
+            <p>© 2025 Namaste Paws - A Pet Adoption Initiative in India</p>
+        </div>
+    </footer>
+
+
+    <script src="petadop.js"></script>
+
+
+</body>
+
+</html>
